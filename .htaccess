@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Rewrite /about to about.php
+RewriteRule ^about$ about.php [L]
+
+# Rewrite /contact to contact.php
+RewriteRule ^contact$ contact.php [L]
+
+# Rewrite /blog/1 to blog.php?id=1
+RewriteRule ^blog/(\d+)$ blog.php?id=$1 [L]
